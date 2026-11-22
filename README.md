@@ -12,6 +12,10 @@ python3 -m http.server 4173 --directory dist
 
 Then open `http://localhost:4173`.
 
+## GitHub Pages
+
+The included workflow publishes the contents of `dist/` to GitHub Pages after every push to `main`.
+
 ## Built with
 
 Plain HTML, CSS, JavaScript, Canvas, and the Web Audio API. There is no build step and no dependency install.
