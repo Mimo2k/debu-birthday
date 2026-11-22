@@ -1,6 +1,6 @@
 # Debu's Birthday
 
-A joyful, interactive birthday surprise for Debu, lovingly sent by his big sister Isha and Mimo.
+A cinematic, interactive birthday surprise for Debu, lovingly sent by his big sister Isha and Mimo. It includes a browser-generated original soundtrack, a birthday premiere sequence, animated memories, confetti, and an interactive candle wish.
 
 ## Preview locally
 
@@ -14,4 +14,4 @@ Then open `http://localhost:4173`.
 
 ## Built with
 
-Plain HTML, CSS, and JavaScript. There is no build step and no dependency install.
+Plain HTML, CSS, JavaScript, Canvas, and the Web Audio API. There is no build step and no dependency install.
