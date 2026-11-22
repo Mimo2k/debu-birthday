@@ -1,6 +1,6 @@
 # Debu's Birthday
 
-A cinematic, interactive birthday surprise for Debu, lovingly sent by his big sister Isha and Mimo. It includes a browser-generated original soundtrack, a birthday premiere sequence, animated memories, confetti, and an interactive candle wish.
+A playful, interactive chocolate-themed birthday surprise for Debu, lovingly sent by his big sister Isha and Mimo. It includes an instrumental Happy Birthday song, animated memories, a box of chocolate wishes, colourful sprinkles, and an interactive candle wish.
 
 ## Preview locally
 

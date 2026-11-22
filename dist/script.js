@@ -1,6 +1,6 @@
 const canvas = document.getElementById('confetti');
 const ctx = canvas.getContext('2d');
-const colors = ['#ff6b5f', '#ffbf46', '#a9d9f5', '#fff6e8', '#ff8daf'];
+const colors = ['#ff668a', '#ffd452', '#73d8c1', '#fff2cc', '#8cc8ff', '#7a3825'];
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 let pieces = [];
 let animationFrame;
@@ -136,6 +136,18 @@ document.getElementById('sparkleButton').addEventListener('click', () => {
   celebrate(135);
 });
 
+const chocolateMessage = document.getElementById('chocolateMessage');
+document.querySelectorAll('.bonbon').forEach((bonbon) => {
+  bonbon.addEventListener('click', () => {
+    document.querySelectorAll('.bonbon').forEach((item) => item.classList.remove('opened'));
+    bonbon.classList.add('opened');
+    chocolateMessage.textContent = bonbon.dataset.wish;
+    soundtrack.chime();
+    celebrate(95);
+    if ('vibrate' in navigator) navigator.vibrate(20);
+  });
+});
+
 const wishButton = document.getElementById('wishButton');
 const cake = document.querySelector('.cake');
 const wishStatus = document.getElementById('wishStatus');
@@ -143,7 +155,7 @@ const wishStatus = document.getElementById('wishStatus');
 wishButton.addEventListener('click', () => {
   cake.classList.add('wished');
   wishButton.disabled = true;
-  wishButton.textContent = 'Your wish is on its way ✦';
+  wishButton.textContent = 'Your sweet wish is on its way ♥';
   wishStatus.textContent = 'May every wonderful thing you wished for find you, Debu.';
   soundtrack.chime();
   celebrate(260);
