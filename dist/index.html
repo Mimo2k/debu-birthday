@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07142e" />
+    <meta name="description" content="A very special birthday wish for Debu, with all the love in the world from Big Sister Isha and Mimo." />
+    <meta property="og:title" content="Happy Birthday, Debu!" />
+    <meta property="og:description" content="A little world of birthday magic, made just for Debu." />
+    <meta property="og:image" content="assets/debu-memories.png" />
+    <title>Happy Birthday, Debu ✦</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <a class="monogram" href="#top" aria-label="Back to the beginning">
+        <span>D</span><i>✦</i>
+      </a>
+      <p>A birthday love letter</p>
+      <button class="sound-toggle" id="sparkleButton" type="button" aria-label="Send Debu some birthday sparkles">
+        <span aria-hidden="true">✦</span> send sparkles
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-photo" role="img" aria-label="Three treasured childhood photos of Debu"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span>A little surprise from Didi</p>
+          <h1 id="hero-title">Debu, you are our <em>favourite kind</em> of magic.</h1>
+          <p class="hero-note">Today, the whole world gets to celebrate the wonderful little person who makes ours so much brighter.</p>
+          <button class="primary-button" id="openSurprise" type="button">
+            Open your birthday surprise <span aria-hidden="true">✦</span>
+          </button>
+        </div>
+        <div class="scroll-note" aria-hidden="true"><span></span>made with all our love</div>
+      </section>
+
+      <section class="marquee" aria-label="Birthday celebration">
+        <div class="marquee-track">
+          <span>HAPPY BIRTHDAY DEBU</span><b>✦</b><span>OUR LITTLE SUNSHINE</span><b>✦</b><span>HAPPY BIRTHDAY DEBU</span><b>✦</b><span>OUR LITTLE SUNSHINE</span><b>✦</b>
+        </div>
+      </section>
+
+      <section class="intro section-shell" id="surprise">
+        <p class="section-kicker reveal">For the boy with stardust in his smile</p>
+        <h2 class="reveal">The day got brighter<br />when <em>you</em> arrived.</h2>
+        <p class="intro-copy reveal">Every funny face. Every tiny adventure. Every big, beautiful dream. You make ordinary days feel like celebrations, just by being you.</p>
+        <div class="traits reveal" aria-label="Three wonderful things about Debu">
+          <article><i>01</i><strong>Curious</strong><span>about everything</span></article>
+          <article><i>02</i><strong>Brave</strong><span>in your own way</span></article>
+          <article><i>03</i><strong>Sunshine</strong><span>everywhere you go</span></article>
+        </div>
+      </section>
+
+      <section class="memories section-shell" aria-labelledby="memories-title">
+        <div class="memories-heading reveal">
+          <p class="section-kicker">Tiny moments, enormous joy</p>
+          <h2 id="memories-title">Three chapters<br />of pure <em>Debu.</em></h2>
+        </div>
+        <div class="memory-grid">
+          <figure class="memory-card card-one reveal">
+            <img src="assets/debu-smile.png" alt="Debu smiling brightly in a blue shirt" />
+            <figcaption><span>The smile</span><p>that can fix absolutely any day.</p></figcaption>
+          </figure>
+          <figure class="memory-card card-two reveal">
+            <img src="assets/debu-adventure.png" alt="Young Debu enjoying a ride on his colourful toy" />
+            <figcaption><span>The adventurer</span><p>always ready for the next big ride.</p></figcaption>
+          </figure>
+          <figure class="memory-card card-three reveal">
+            <img src="assets/debu-hero.png" alt="Debu dressed up and striking a heroic pose" />
+            <figcaption><span>The little hero</span><p>with a heart bigger than the sky.</p></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="letter-wrap section-shell" aria-labelledby="letter-title">
+        <article class="letter reveal">
+          <div class="letter-stamp" aria-hidden="true">FOR<br />DEBU<br />♥</div>
+          <p class="letter-label">A note from your big sister</p>
+          <h2 id="letter-title">My dearest Debu,</h2>
+          <p>Watching you grow has been one of the greatest joys of my life. Your laughter fills every corner, your mischief makes the best stories, and your little heart makes us proud every single day.</p>
+          <p>May you always stay this curious, this fearless, and this wonderfully you. I hope your world is forever full of adventures, warm hugs, silly giggles, and people who love you exactly as much as I do.</p>
+          <p class="letter-close">I will always be cheering the loudest for you.</p>
+          <div class="signature"><span>All my love, always</span><strong>Your Big Sister Isha</strong></div>
+        </article>
+      </section>
+
+      <section class="wish section-shell" aria-labelledby="wish-title">
+        <div class="wish-copy reveal">
+          <p class="section-kicker">Birthday mission</p>
+          <h2 id="wish-title">Close your eyes.<br />Make it <em>magic.</em></h2>
+          <p>Think of your biggest, brightest wish. When you are ready, blow out the candles.</p>
+          <button class="wish-button" id="wishButton" type="button">Blow out the candles <span aria-hidden="true">♥</span></button>
+          <p class="wish-status" id="wishStatus" role="status" aria-live="polite"></p>
+        </div>
+        <div class="cake-scene reveal" aria-label="An illustrated birthday cake with three candles">
+          <div class="stars" aria-hidden="true"><i>✦</i><i>✧</i><i>✦</i><i>✧</i></div>
+          <div class="cake">
+            <div class="candles" aria-hidden="true">
+              <span><i></i></span><span><i></i></span><span><i></i></span>
+            </div>
+            <div class="icing">DEBU</div>
+            <div class="cake-body"><b></b><b></b><b></b></div>
+            <div class="plate"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="finale">
+        <div class="finale-orbit orbit-one" aria-hidden="true"></div>
+        <div class="finale-orbit orbit-two" aria-hidden="true"></div>
+        <div class="finale-content reveal">
+          <p>One day. One very special boy.<br />A whole universe of love.</p>
+          <h2>Happy Birthday,<br /><em>Debu!</em></h2>
+          <div class="finale-signoff">
+            <span>Forever your biggest cheerleaders</span>
+            <strong>Big Sister Isha &amp; Mimo</strong>
+          </div>
+          <button id="replayButton" class="replay-button" type="button">Celebrate again <span aria-hidden="true">✦</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with <span aria-hidden="true">♥</span> by Mimo, especially for Debu</p>
+      <p>Keep being wonderful.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
